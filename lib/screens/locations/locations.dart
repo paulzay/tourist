@@ -11,7 +11,8 @@ class Locations extends StatelessWidget {
         title: Text('Locations'),
       ),
       body: ListView(
-        children: locations.map((e) => Text(e.name)).toList(),
+        children: locations.map((e) => GestureDetector(
+          child: Text(e.name))).toList(),
       ),
     );
   }
